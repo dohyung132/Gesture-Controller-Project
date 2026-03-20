@@ -1,0 +1,24 @@
+# 컴파일 결과물 및 임시 파일
+[Bb]in/
+[Oo]bj/
+[Log]/
+*.exe
+*.pdb
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*.suo
+*.userossc
+*.sln.docstates
+
+# 비주얼 스튜디오 프로젝트 관련 캐시
+.vs/
+ipch/
+*.opendb
+*.db
+
+# 아두이노 관련 임시 파일
+/build/
+/libraries/
