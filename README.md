@@ -5,6 +5,7 @@ Gyro & Illumination Sensor Based Windows OS Gesture Controller
 
 
 주요 기능 (Key Features)
+
 가상 클러치 (Virtual Clutch): 조도 센서를 활용하여 사용자가 의도적으로 센서를 가렸을 때만 제스처를 인식하도록 설계하여 오작동을 방지했습니다.
 
 지능형 앱 감지: Windows API(GetForegroundWindow)를 통해 현재 활성화된 창을 실시간으로 분석, 앱에 맞는 최적의 단축키를 자동으로 매핑합니다.
@@ -15,6 +16,7 @@ Gyro & Illumination Sensor Based Windows OS Gesture Controller
 
 
 시스템 구조 (System Architecture)
+
 본 프로젝트는 하드웨어, 리눅스 서버, 윈도우 클라이언트의 3계층 구조로 이루어져 있습니다.
 
 Hardware (Arduino): MPU6050(자이로) 및 조도 센서 데이터 수집 (10ms 주기)
