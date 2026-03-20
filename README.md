@@ -15,6 +15,11 @@ Gyro & Illumination Sensor Based Windows OS Gesture Controller
 통합 모니터링: 모든 제스처 이력과 성공 여부를 MySQL DB에 기록하여 시스템 신뢰도를 관리합니다.
 
 
+
+
+
+
+
 시스템 구조 (System Architecture)
 
 본 프로젝트는 하드웨어, 리눅스 서버, 윈도우 클라이언트의 3계층 구조로 이루어져 있습니다.
@@ -26,6 +31,11 @@ Server (Linux): 수신된 Raw 데이터를 분석하여 제스처 판정 및 DB 
 Client (Windows): TCP/IP 소켓 통신을 통해 수신된 명령을 바탕으로 OS 이벤트(키보드 입력) 실행
 
 
+
+
+
+
+
 기술 스택 (Tech Stack)
 구분,내용
 Language,"C, C++"
@@ -34,10 +44,21 @@ OS,"Linux (Ubuntu), Windows 10/11"
 Database,MySQL
 Protocol,"Serial Communication, TCP/IP Socket"
 
+
+
+
+
+
 문제 해결 (Troubleshooting)
 
 리바운드 오작동 방지: 제스처 완료 후 손을 원위치로 돌릴 때 발생하는 중복 입력을 막기 위해 1초간의 Throttling(쿨다운 타임) 로직을 구현했습니다.
 
 통신 신뢰성 확보: 데이터 유실 방지를 위해 시작(STX)과 끝(ETX) 문자를 포함한 고유 통신 프로토콜을 설계하여 데이터 무결성을 확보했습니다.
+
+
+
+
+
+
 
 이도형 (Dohyung Lee)
